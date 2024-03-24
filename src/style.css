@@ -68,7 +68,6 @@ main {
 .weather-app-value {
   font-size: 88px;
   font-weight: bold;
-  margin-left: 10px;
   line-height: 88px;
 }
 .weather-app-unit {
