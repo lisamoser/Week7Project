@@ -7,6 +7,7 @@ function updateWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
 
   searchCityElement.innerHTML = response.data.city;
   timeElement.innerHTML = returnDate(date);
@@ -14,6 +15,7 @@ function updateWeather(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   temperatureElement.innerHTML = Math.round(temperature);
+  iconElement.innerHTML = `<img src=${response.data.condition.icon_url} "class=weather-app-icon" />`;
 }
 function returnDate(date) {
   let minutes = date.getMinutes();
