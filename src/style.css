@@ -74,6 +74,26 @@ main {
   font-size: 28px;
   margin-top: 16px;
 }
+.weather-forcast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+}
+.forcast-day {
+}
+.forecast-date {
+  font-size: 18px;
+  color: black;
+  opacity: 0.5;
+}
+.forcast-temperature {
+  font-size: 14px;
+}
+.min-temp {
+  opacity: 0.5;
+}
 
 footer {
   border-top: 1px solid #f9f7fe;
